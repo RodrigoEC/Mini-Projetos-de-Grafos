@@ -113,7 +113,7 @@ public class CirculoAmigosTest {
     }
 
     @Test
-    public void TesteCiclosDisjuntos(){
+    public void TesteCirculosDisjuntos(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
         listaAmigos.add(new Pair<String, String>("a","b"));
         listaAmigos.add(new Pair<String, String>("c","d"));
@@ -234,7 +234,7 @@ public class CirculoAmigosTest {
     }
 
     @Test
-    public void TesteDoisCiclosDisjuntos(){
+    public void TesteDoisCirculosDisjuntos(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
         listaAmigos.add(new Pair<String, String>("a",""));
         listaAmigos.add(new Pair<String, String>("c","d"));
