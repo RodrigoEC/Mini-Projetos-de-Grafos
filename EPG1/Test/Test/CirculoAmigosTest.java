@@ -69,7 +69,7 @@ public class CirculoAmigosTest {
     }
 
     @Test
-    public void TestCirculosdeAmigosTodosSeConhecem(){
+    public void TestCirculoDeAmigosTodosSeConhecem(){
         ArrayList<Pair<String, String>> listaAmigos = new ArrayList<>();
         listaAmigos.add(new Pair<String, String>("a","b"));
         listaAmigos.add(new Pair<String, String>("b","c"));
@@ -97,7 +97,7 @@ public class CirculoAmigosTest {
     }
 
     @Test
-    public void TesteCirculoVazio(){
+    public void TesteCirculoDeAmigosInexistente(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
         listaAmigos.add(new Pair<String, String>("",""));
 
@@ -234,7 +234,7 @@ public class CirculoAmigosTest {
     }
 
     @Test
-    public void TesteDoisCirculosDisjuntos(){
+    public void TesteDoisCirculosDisjuntosPessoaSozinha(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
         listaAmigos.add(new Pair<String, String>("a",""));
         listaAmigos.add(new Pair<String, String>("c","d"));
@@ -302,7 +302,7 @@ public class CirculoAmigosTest {
 
 
     @Test
-    public void TestPessoaSemAmigos(){
+    public void TestPessoaSemCirculosDeAmigos(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
         listaAmigos.add(new Pair<String, String>("a",""));
 
