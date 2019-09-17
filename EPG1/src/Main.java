@@ -9,10 +9,10 @@ import java.util.Set;
 
 /**
  * 
- * @author henri
+ * @author
  *Aluno 1: Rodrigo Eloy
  *Aluno 2:Jesse Monteiro
- *Aluno 3:Leandra
+ *Aluno 3:Leandra Oliveira
  *Aluno 4:Paulo Henrique Ribeiro
  */
 
@@ -45,8 +45,8 @@ public class Main {
          */
         listaAmigos.add(new Pair<String, String>("c","b"));
 
-        /**Imprime o grafo
-         * 
+        /**
+         * Imprime uma lista de conjuntos, em que cada conjunto eh composto por um circulo de amigos
          */
         System.out.println(CirculoAmigos.retornaCirculos(listaAmigos));
 
