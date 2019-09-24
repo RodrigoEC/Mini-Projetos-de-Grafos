@@ -1,26 +1,16 @@
-import static org.junit.Assert.*;
+import org.jgrapht.alg.util.Pair;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-import org.jgrapht.alg.util.Pair;
-import org.junit.Test;
-import sun.util.resources.cldr.zh.CalendarData_zh_Hans_HK;
+import static org.junit.Assert.*;
 
 
 public class CirculoAmigosTest {
 
-	/**
-	 * 
-	 * @author henri
-	 *Aluno 1: Rodrigo Eloy
-	 *Aluno 2:Jesse Monteiro
-	 *Aluno 3:Leandra
-	 *Aluno 4:Paulo Henrique Ribeiro
-	 */
     @Test
     public void test1() {
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
@@ -65,6 +55,7 @@ public class CirculoAmigosTest {
         assertEquals(circuloAmigos.size(),1);
     }
 
+
     @Test
     public void test3 () {
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
@@ -75,6 +66,10 @@ public class CirculoAmigosTest {
         assertEquals(circuloAmigos.size(),0);
     }
 
+    /**
+     * Esse teste tem o objetivo de testar se passar como parametro uma lista de amigos em que todos ele se conhecem se o
+     * retorno sera um array com um elemento apenas, um cojuunto com todos os vértices (amigos) criados.
+     */
     @Test
     public void TestCirculoDeAmigosTodosSeConhecem(){
         ArrayList<Pair<String, String>> listaAmigos = new ArrayList<>();
@@ -103,6 +98,11 @@ public class CirculoAmigosTest {
 
     }
 
+    /**
+     * Esse metodo testa se ao passar uma lista de amigos sem nenhum amigo (nenhum vertice) o retorno sera uma lista vazia.
+     * Nenhum vertice foi cadastrado, ja que os vertices passados sao strings vazias.
+     *
+     */
     @Test
     public void TesteCirculoDeAmigosInexistente(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
@@ -119,6 +119,12 @@ public class CirculoAmigosTest {
         assertEquals(circuloAmigos.size(),0);
     }
 
+    /**
+     * Esse metodo testa se ao adicionar alguns vertices que nao se relacionam (Pessoas que nao tem nenhuma correlacao de
+     * amizade) o metodo retorna uma lista com 2 elementos, nesse caso eh claro, o primeiro elemento com os vertices "{a,b,e,f}" e
+     * o segundo elemento com os elementos "{c, d}"
+     *
+     */
     @Test
     public void TesteCirculosDisjuntos(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
@@ -153,6 +159,11 @@ public class CirculoAmigosTest {
         assertEquals(circuloAmigos.size(),2);
     }
 
+    /**
+     * Esse metodo testa se ao adicionar 3 pares de amigos (vertices) nao-correlatos uma lista com 3 elementos ([a,b],
+     * [c, d] e [e, f]) sera criada e retornada.
+     *
+     */
     @Test
     public void TesteAmigosSemAmigosEmComumCirculosDisjuntos(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
@@ -188,6 +199,12 @@ public class CirculoAmigosTest {
 
     }
 
+
+    /**
+     * Metodo que testa a criacao de 3 circulos de amizades diferentes. Nesse caso o metodo retorna uma lista com 3 sets:
+     * ([a, b, c, d], [e, f, g, h], [i, j, k, l])
+     *
+     */
     @Test
     public void TesteTresCirculosDisjuntos(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
@@ -240,6 +257,10 @@ public class CirculoAmigosTest {
 
     }
 
+    /**
+     * Esse metodo testa se ao adicionar varios pares com 2 vertices (strings nao vazias) e 1 par com uma string vazia.
+     * Eh esperado que o metodo retorne 1 lista com 2 sets, um com apenas 1 elemento e o outro com 4 ([a], [c, d, e, f])
+     */
     @Test
     public void TesteDoisCirculosDisjuntosPessoaSozinha(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
@@ -270,6 +291,12 @@ public class CirculoAmigosTest {
         assertEquals(circuloAmigos.size(),2);
     }
 
+    /**
+     * O metodo testa a criação de 4 pessoas (vertices) que nao tem amigos (4 vertices sem arestas). O metodo retorna uma
+     * lista com 4 sets, sem que cada set possui apenas 1 elemento, ja q o circulo de amizade existente apenas possui ele (triste)
+     * [[a], [b],[c], [d] nesse caso]
+     *
+     */
     @Test
     public void TesteNaoExisteCirculoDeAmigos(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();
@@ -308,6 +335,12 @@ public class CirculoAmigosTest {
     }
 
 
+    /**
+     * O metodo teste se na lista passada como parametro existir apenas um Pair de elementos em que um desses elementos
+     * seja uma string vazia o metodo retorna apenas a uma lista de sets com um set que possui apenas um elemento, o elemento
+     * que nao possui amigos ([a] nesse caso)
+     *
+     */
     @Test
     public void TestPessoaSemCirculosDeAmigos(){
         ArrayList<Pair<String,String>> listaAmigos = new ArrayList <Pair<String,String>> ();

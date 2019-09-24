@@ -9,7 +9,7 @@ import java.util.Set;
 
 /**
  * 
- * @author henri
+ *
  *Aluno 1: Rodrigo Eloy
  *Aluno 2:Jesse Monteiro
  *Aluno 3:Leandra
@@ -36,7 +36,7 @@ public class Main {
          *adiciona os pares "b","c" a lista
          */
         listaAmigos.add(new Pair<String, String>("b","c"));
-        /** 
+        /**
          *adiciona os pares "c","a" a lista
          */
         listaAmigos.add(new Pair<String, String>("c","a"));
@@ -46,7 +46,7 @@ public class Main {
         listaAmigos.add(new Pair<String, String>("c","b"));
 
         /**Imprime o grafo
-         * 
+         *
          */
         System.out.println(CirculoAmigos.retornaCirculos(listaAmigos));
 
