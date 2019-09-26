@@ -16,6 +16,35 @@ import org.jgrapht.graph.SimpleWeightedGraph;
 public class VendaImoveis {
 	Graph <String,DefaultWeightedEdge> distrito;
 
+	public VendaImoveis(String fileName) {
+		Graph<String, DefaultWeightedEdge> weightGraph = new SimpleWeightedGraph<>(DefaultWeightedEdge.class);
+		this.distrito = importWeightedGraphCSV(weightGraph, fileName);
+
+	}
+
+	public String localizaImovel (String pontodeInteresse, Set <String> imoveis) {
+		if (!this.distrito.containsVertex(pontodeInteresse) || imoveis == null || imoveis.size() == 0) {
+			return null;
+		}
+
+		DijkstraShortestPath<String, DefaultEdge> dij = new DijkstraShortestPath(this.distrito);
+		ShortestPathAlgorithm.SingleSourcePaths<String, DefaultEdge> shortPath  = dij.getPaths(pontodeInteresse);
+
+		String imovelMaisPerto = "";
+		Double menorDistancia = Double.MAX_VALUE;
+
+		for (String imovel: imoveis) {
+			Double distancia = shortPath.getPath(imovel).getWeight();
+
+			if (distancia < menorDistancia) {
+				menorDistancia = distancia;
+				imovelMaisPerto = imovel;
+			}
+		}
+
+		return imovelMaisPerto;
+	}
+
 	public static Graph<String,DefaultWeightedEdge> importWeightedGraphCSV
 			(Graph<String,DefaultWeightedEdge> graph, String filename) {
 		// WEIGHTED EDGE LIST
@@ -33,37 +62,6 @@ public class VendaImoveis {
 			e.printStackTrace();
 		}
 		return graph;
-	}
-
-	public VendaImoveis(String fileName) {
-		Graph<String, DefaultWeightedEdge> weightGraph = new SimpleWeightedGraph<>(DefaultWeightedEdge.class);
-		this.distrito = importWeightedGraphCSV(weightGraph, fileName);
-
-	}
-
-	public String localizaImovel (String pontodeInteresse, Set <String> imoveis) {
-		if (this.distrito.containsVertex(pontodeInteresse) && imoveis!= null && imoveis.size() > 0) {
-
-			DijkstraShortestPath<String, DefaultEdge> dij = new DijkstraShortestPath(this.distrito);
-
-			ShortestPathAlgorithm.SingleSourcePaths<String, DefaultEdge> shortPath  = dij.getPaths(pontodeInteresse);
-
-			String imovelMaisPerto = "";
-			Double menorDistancia = null;
-
-			for (String imovel: imoveis) {
-				Double distancia = shortPath.getPath(imovel).getWeight();
-				if (menorDistancia == null || distancia < menorDistancia) {
-					menorDistancia = distancia;
-					imovelMaisPerto = imovel;
-				}
-				shortPath.getPath(imovel);
-
-			}
-			return imovelMaisPerto;
-		} else {
-			return null;
-		}
 	}
 
 
