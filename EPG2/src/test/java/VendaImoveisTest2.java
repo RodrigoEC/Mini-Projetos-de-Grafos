@@ -258,7 +258,6 @@ public class VendaImoveisTest2 {
         assertNull(imovel);
     }
 
-
     @Test
     public void testImovelNulo () {
         String imovel = v1.localizaImovel("ESCOLA", null);
