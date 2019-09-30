@@ -13,15 +13,44 @@ import org.jgrapht.graph.SimpleGraph;
 import org.jgrapht.graph.SimpleWeightedGraph;
 
 
+/**
+ * Essa classe representa um processo de procura da casa perfeita para determinado cliente, levando em conta o ponto de interesse do
+ * cliente e as casas que estao disponíveis para aluguel ao redor da cidade.
+ *
+ * Alunos:
+ * - Rodrigo Eloy
+ * - Leandra Oliveira
+ * - Jesse Monteiro
+ * - Henrique Ribeiro
+ */
 public class VendaImoveis {
 	Graph <String,DefaultWeightedEdge> distrito;
 
+	/**
+	 * O metodo vendaImoveis eh responsavel por atribuir ao atributo "distrito" o grafo que improtado pelo metodo
+	 * "importWeightedGraphCSV"
+	 *
+	 * @param fileName nome do arquivo que será utilizado pra iniciar o atributo "distrito"
+	 */
 	public VendaImoveis(String fileName) {
 		Graph<String, DefaultWeightedEdge> weightGraph = new SimpleWeightedGraph<>(DefaultWeightedEdge.class);
 		this.distrito = importWeightedGraphCSV(weightGraph, fileName);
 
 	}
 
+	/**
+	 * O método localizaImovel eh responsavel por localizar o imovel mais perto de um ponto de interesse. Atraves do
+	 * metodo getPaths da classe DijkstraShortestPath eh selecionado o menor caminho entre cada vertice do grafo e o ponto
+	 * de interesse. Por fim, eh selecionado o imovel do set de imoveis que possui o menor caminho, dentre os ja selecionados,
+	 * entre ele e o ponto de interesse. Caso o ponto de interesse passado não seja um vertice do grafo ou o conjunto de
+	 * imoveis seja null ou nao exista nenhum elemento no set passado o metodo retorna null.
+	 *
+	 *
+	 *
+	 * @param pontodeInteresse Ponto de interesse.
+	 * @param imoveis Conjunto de imoveis disponiveis para aluguel.
+	 * @return O nome do imovel alugavel mais perto do ponto de interesse.
+	 */
 	public String localizaImovel (String pontodeInteresse, Set <String> imoveis) {
 		if (!this.distrito.containsVertex(pontodeInteresse) || imoveis == null || imoveis.size() == 0) {
 			return null;
@@ -45,6 +74,14 @@ public class VendaImoveis {
 		return imovelMaisPerto;
 	}
 
+	/**
+	 * Metodo retirado da classe MyJgraphTUtil disponibilizado pela professora Patricia para os alunos. O metodo tem a funcao de
+	 * importar um grafo cujo nome do arquivo que o contem eh passado como parametro.
+	 *
+	 * @param graph grafo que tera os vertices e arestas iguais ao do arquivo.
+	 * @param filename nome do arquivo.
+	 * @return um grafo igual ao grafo ccujo nome foi passado como parametro
+	 */
 	public static Graph<String,DefaultWeightedEdge> importWeightedGraphCSV
 			(Graph<String,DefaultWeightedEdge> graph, String filename) {
 		// WEIGHTED EDGE LIST
