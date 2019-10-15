@@ -58,9 +58,7 @@ public class IteracoesFormigas {
         ugraph = importWeightedGraphCSV(weightGraph, "/home/leandra/antcolony50.csv");
 
         BetweennessCentrality<String, DefaultWeightedEdge> bc = new BetweennessCentrality<>(ugraph, true);
-
-
-        System.out.println("Formigas que melhor atuaram na condução de informações: " + bc.getScores());
+        System.out.println("Formigas que melhor atuaram na condução de informações: " + bc.getScores().keySet());
 
 
         AlphaCentrality<String, DefaultWeightedEdge> ac =
