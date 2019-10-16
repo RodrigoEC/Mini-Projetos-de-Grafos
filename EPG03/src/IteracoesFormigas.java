@@ -1,33 +1,46 @@
 import org.jgrapht.Graph;
 import org.jgrapht.alg.scoring.*;
-import org.jgrapht.graph.DefaultWeightedEdge;
-import org.jgrapht.graph.Multigraph;
+import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.DefaultEdge;
 import org.jgrapht.graph.SimpleWeightedGraph;
 
+import java.io.*;
+
+import org.jgrapht.io.EdgeProvider;
+import org.jgrapht.io.GmlImporter;
+import org.jgrapht.io.ImportException;
+import org.jgrapht.io.VertexProvider;
 import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+
 import java.util.*;
+
 
 public class IteracoesFormigas {
 
-    public static Graph<String, DefaultWeightedEdge> importWeightedGraphCSV
-            (Graph<String, DefaultWeightedEdge> graph, String filename) {
-        // WEIGHTED EDGE LIST
+    public static Graph<String, DefaultEdge> importDefaultGraphGML (Graph<String,DefaultEdge> graph, String filename) {
+        VertexProvider<String> vp1 = (label, attributes) -> label;
+        EdgeProvider<String, DefaultEdge> ep1 = (from, to, label, attributes) -> new DefaultEdge();
+        GmlImporter<String, DefaultEdge> gmlImporter = new GmlImporter<>(vp1, ep1);
+        try {
+            gmlImporter.importGraph(graph, readFile(filename));
+        } catch (ImportException e) {
+            throw new RuntimeException(e);
+        }
+        return graph;
+    }
+
+    static Reader readFile(String filename) {
+        StringBuilder contentBuilder = new StringBuilder();
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
-            String sCurrentLine = br.readLine();
+            String sCurrentLine;
             while ((sCurrentLine = br.readLine()) != null) {
-                String[] attributes = sCurrentLine.split(",");
-                graph.addVertex(attributes[0]);
-                graph.addVertex(attributes[1]);
-                DefaultWeightedEdge e = new DefaultWeightedEdge();
-                graph.addEdge(attributes[0], attributes[1], e);
-                graph.setEdgeWeight(e, new Double(attributes[2]).doubleValue());
+                contentBuilder.append(sCurrentLine).append("\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return graph;
+        StringReader readergml = new StringReader(contentBuilder.toString());
+        return readergml;
     }
 
     public static <V, E> double assortativityCoefficient(Graph<V, E> graph) {
@@ -50,26 +63,38 @@ public class IteracoesFormigas {
         return (n1 - n2) / (dn - n2);
     }
 
+    private static ArrayList cincoPrincipais(Set formigas){
+        ArrayList saida = new ArrayList();
+
+        int contador = 0;
+
+        for (Object formiga : formigas) {
+            saida.add(formiga);
+            contador++;
+            if (contador >= 5){
+                break;
+            }
+        }
+
+        return saida;
+    }
+
     public static void main(String[] args) {
 
-        Graph<String, DefaultWeightedEdge> ugraph;
+        Graph<String, DefaultEdge> ugraph = new SimpleWeightedGraph<>(DefaultEdge.class);
+        ugraph = importDefaultGraphGML(ugraph,"/home/leandra/Documentos/EPG03/antcolony50.gml");
 
-        Graph<String, DefaultWeightedEdge> weightGraph = new SimpleWeightedGraph<>(DefaultWeightedEdge.class);
-        ugraph = importWeightedGraphCSV(weightGraph, "/home/leandra/antcolony50.csv");
-
-        BetweennessCentrality<String, DefaultWeightedEdge> bc = new BetweennessCentrality<>(ugraph, true);
-        System.out.println("Formigas que melhor atuaram na condução de informações: " + bc.getScores().keySet());
+        BetweennessCentrality<String, DefaultEdge> bc = new BetweennessCentrality<>(ugraph, true);
+        System.out.println("Formigas que melhor atuaram na condução de informações: " + cincoPrincipais(bc.getScores().keySet()));
 
 
-        AlphaCentrality<String, DefaultWeightedEdge> ac =
-                new AlphaCentrality<>(ugraph, 0.001);
-        System.out.println("Formigas mais influentes: " + ac.getScores().keySet());
+        AlphaCentrality<String, DefaultEdge> ac = new AlphaCentrality<>(ugraph, 0.001);
+        System.out.println("Formigas mais influentes: " +  cincoPrincipais(ac.getScores().keySet()));
 
 
-        ClusteringCoefficient<String, DefaultWeightedEdge> cluster =
+        ClusteringCoefficient<String, DefaultEdge> cluster =
                 new ClusteringCoefficient<>(ugraph);
         System.out.println("Grupos isolados:  " + cluster.getGlobalClusteringCoefficient());
-
 
         if (assortativityCoefficient(ugraph) == 1) {
             System.out.println("Formigas se relacionam com outras com grau de interação semelhantes");
