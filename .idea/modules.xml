@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/EPG03/EPG03.iml" filepath="$PROJECT_DIR$/EPG03/EPG03.iml" />
       <module fileurl="file://$PROJECT_DIR$/EPG1/EPG1.iml" filepath="$PROJECT_DIR$/EPG1/EPG1.iml" />
       <module fileurl="file://$PROJECT_DIR$/EPG2/EPG2.iml" filepath="$PROJECT_DIR$/EPG2/EPG2.iml" />
       <module fileurl="file://$PROJECT_DIR$/EPG1/Test/Test.iml" filepath="$PROJECT_DIR$/EPG1/Test/Test.iml" />

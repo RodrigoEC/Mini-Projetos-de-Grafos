@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d854f42f-1feb-403a-a6ba-c00199613461" name="Default Changelist" comment="" />
+    <list default="true" id="250ea45a-65de-4bf2-b78f-1265cf7026d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_jgrapht_jgrapht_io_1_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EPG03/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EPG03/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EPG03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EPG03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EPG03/EPG03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EPG03/EPG03.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EPG03/out/production/EPG03/IteracoesFormigas.class" beforeDir="false" afterPath="$PROJECT_DIR$/EPG03/out/production/EPG03/IteracoesFormigas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EPG03/src/IteracoesFormigas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EPG03/src/antcolony1000.gml" beforeDir="false" afterPath="$PROJECT_DIR$/EPG03/src/antcolony1000.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EPG2/EPG2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EPG2/EPG2.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,35 +29,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EPG2/src/test/java/VendaImoveisTest2.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EPG03/src/AntColony.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="112" selection-start-line="20" selection-start-column="112" selection-end-line="20" selection-end-column="112" />
+            <state relative-caret-position="-2211">
+              <caret line="33" column="85" selection-start-line="33" selection-start-column="85" selection-end-line="33" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EPG2/src/main/resources/Vizinhanca2.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="289">
-              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EPG03/src/antcolony1000fuciona.gml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,8 +54,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EPG2/src/test/java/VendaImoveisTest2.java" />
-        <option value="$PROJECT_DIR$/EPG2/src/main/resources/Vizinhanca2.csv" />
+        <option value="$PROJECT_DIR$/EPG03/src/AntColony.java" />
       </list>
     </option>
   </component>
@@ -61,49 +63,29 @@
     <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Mini-Projetos-de-Grafossss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EPG2" type="462c0819:PsiDirectoryNode" />
+              <item name="Mini-Projetssos-de-Grafos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EPG03" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Mini-Projetos-de-Grafossss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EPG2" type="462c0819:PsiDirectoryNode" />
+              <item name="Mini-Projetssos-de-Grafos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EPG03" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mini-Projetos-de-Grafossss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EPG2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mini-Projetos-de-Grafossss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EPG2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mini-Projetos-de-Grafossss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EPG2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -112,9 +94,9 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -129,24 +111,16 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="VendaImoveisTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EPG2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.java" />
-      <option name="MAIN_CLASS_NAME" value="test.java.VendaImoveisTest2" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="AntColony" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AntColony" />
+      <module name="EPG03" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VendaImoveisTest2" />
+        <item itemvalue="Application.AntColony" />
       </list>
     </recent_temporary>
   </component>
@@ -155,46 +129,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d854f42f-1feb-403a-a6ba-c00199613461" name="Default Changelist" comment="" />
-      <created>1569703544345</created>
+      <changelist id="250ea45a-65de-4bf2-b78f-1265cf7026d6" name="Default Changelist" comment="" />
+      <created>1571438691355</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1569703544345</updated>
+      <updated>1571438691355</updated>
     </task>
-    <task id="LOCAL-00001" summary="Testes concluidos">
-      <created>1569704164341</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1569704164341</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Testes concluidos">
-      <created>1569704374870</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1569704374870</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="VendaImoveisTest2 - 2019.09.28 at 17h 51m 42s.xml">
-      <configuration name="VendaImoveisTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VendaImoveisTest2 - 2019.09.28 at 17h 53m 18s.xml">
-      <configuration name="VendaImoveisTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VendaImoveisTest2 - 2019.09.28 at 17h 55m 25s.xml">
-      <configuration name="VendaImoveisTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VendaImoveisTest2 - 2019.09.28 at 17h 55m 27s.xml">
-      <configuration name="VendaImoveisTest2" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -224,25 +168,17 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Testes concluidos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testes concluidos" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EPG2/src/test/java/VendaImoveisTest2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="112" selection-start-line="20" selection-start-column="112" selection-end-line="20" selection-end-column="112" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/EPG03/src/antcolony1000fuciona.gml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/EPG2/src/main/resources/Vizinhanca2.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="289">
-          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+    <entry file="file://$PROJECT_DIR$/EPG03/src/AntColony.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2211">
+          <caret line="33" column="85" selection-start-line="33" selection-start-column="85" selection-end-line="33" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -296,12 +232,10 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>EPG2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -321,6 +255,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>org.jgrapht:jgrapht-io:1.3.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
