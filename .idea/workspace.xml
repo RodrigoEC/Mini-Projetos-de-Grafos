@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="250ea45a-65de-4bf2-b78f-1265cf7026d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_jgrapht_jgrapht_io_1_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EPG03/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EPG03/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EPG03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EPG03/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EPG03/EPG03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EPG03/EPG03.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EPG03/out/production/EPG03/IteracoesFormigas.class" beforeDir="false" afterPath="$PROJECT_DIR$/EPG03/out/production/EPG03/IteracoesFormigas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EPG03/src/IteracoesFormigas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EPG03/src/antcolony1000.gml" beforeDir="false" afterPath="$PROJECT_DIR$/EPG03/src/antcolony1000.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EPG2/EPG2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EPG2/EPG2.iml" afterDir="false" />
-    </list>
+    <list default="true" id="250ea45a-65de-4bf2-b78f-1265cf7026d6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EPG03/src/AntColony.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2211">
@@ -41,12 +27,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EPG03/src/antcolony1000fuciona.gml">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EPG03/src/iteracoesFormigas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="30" selection-start-column="30" selection-end-column="30" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,10 +132,19 @@
       <option name="presentableId" value="Default" />
       <updated>1571438691355</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;codigo pronto&quot;">
+      <created>1571439797510</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571439797510</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -168,6 +174,10 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;codigo pronto&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;codigo pronto&quot;" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/EPG03/src/antcolony1000fuciona.gml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -179,6 +189,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EPG03/src/iteracoesFormigas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
