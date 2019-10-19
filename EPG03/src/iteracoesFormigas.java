@@ -184,13 +184,13 @@ public class iteracoesFormigas {
         ClusteringCoefficient <String, DefaultEdge> cluster =
                 new ClusteringCoefficient <>(ugraph);
 
-        System.out.println("Coeficiente: " + cluster.getAverageClusteringCoefficient());
+        System.out.println("Coeficiente: " + cluster.getGlobalClusteringCoefficient());
 
-        if (cluster.getAverageClusteringCoefficient() >= 0 || cluster.getAverageClusteringCoefficient() <= 1){
+        if (cluster.getGlobalClusteringCoefficient() >= 0 || cluster.getGlobalClusteringCoefficient() <= 1){
             System.out.println("É possivel observar a formação de grupos isolados. ");
         }
 
-        else if (cluster.getAverageClusteringCoefficient() >= 0 || cluster.getAverageClusteringCoefficient() <= -1){
+        else if (cluster.getGlobalClusteringCoefficient() >= 0 || cluster.getGlobalClusteringCoefficient() <= -1){
             System.out.println("Não é possivel observar a formação de grupos isolados. ");
 
         }
